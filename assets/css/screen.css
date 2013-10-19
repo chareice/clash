@@ -318,11 +318,12 @@ table tbody > tr:nth-child(odd) > th {
     background-color: #f6f6f6;
 }
 
-table.plain tbody > tr:nth-child(odd) > td,
-table.plain tbody > tr:nth-child(odd) > th {
-   background: transparent;
+table.plain {
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background: transparent;
+    }
 }
-
 
 
 /* ==========================================================================
@@ -533,7 +534,6 @@ table.plain tbody > tr:nth-child(odd) > th {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    height: auto;
 }
 
 /* The author credit area after the post */
@@ -727,7 +727,9 @@ table.plain tbody > tr:nth-child(odd) > th {
 .subscribe:hover:before {
     color: #50585D;
 }
-
+#disqus_thread{
+    margin-top: 80px;
+}
 /* CSS tooltip saying "Subscribe!" - initially hidden */
 .tooltip {
     opacity:0;
